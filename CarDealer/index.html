@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>car_dealer</title>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' type='text/css' href='CSS/style.css'>
+	<style media="screen" type="text/css">
+
+
+	</style>
+
+
+</head>
+<body>
+	<div class='title'>
+		<img src='image/logo.png' alt='logo' id='logo'>
+		Car Dealer Shop
+		<div class="login">
+			
+		</div>
+	</div>
+<nav>
+	<div class='entirebody'>
+	  <ul class='mainnav'>
+	  	<li><a href='#' class='active'>All</a></li>
+	    <li><a href='#'>Toyota</a></li>
+	    <li><a href='#'>Nissan</a></li>
+	    <li><a href='#'>BMW</a></li>
+	    <li><a href='#'>VW</a></li>
+	    <li><a href='#'>Ford</a></li>
+	    <li><a href='#'>Honda</a></li>
+	  </ul>
+	</div>
+</nav>
+
+<div class='wrapper'>
+
+<div class='main'>
+	<div class='search'>
+		<form action='search.php' method='post'>
+		Make: <input type='text' name='make'>&nbsp;&nbsp;&nbsp;&nbsp;
+		Model: <input type='text' name='model'><br><br>
+		<div class='searchother'>
+		Year: <input type='text' name='year1' class='int'> to <input type='text' name='year2' class='int'><br>
+		Mileage: <input type='text' name='mileage1' class='int'> to <input type='text' name='mileage2' class='int'><br>
+		Accidents: <input type='text' name='accidents1' class='int'> to <input type='text' name='accidents2' class='int'><br>
+		Damage: <input type='text' name='damage1' class='int'> to <input type='text' name='damage2' class='int'><br>
+		Price: <input type='text' name='price1' class='int'> to <input type='text' name='price2' class='int'><br>
+		</div>
+		<input type='submit' name='Search' value='Search'>
+
+	</div>
+
+</div>
+
+<div class='sub'>
+	<h1>Recommendation</h1>
+</div>
+
+
+</div>
+
+<footer>
+<hr>
+copyright&copy; 2017
+</footer>
+
+
+
+
+
+
+
+<script src='JS/jquery-3.2.1.js' type='text/javascript'></script>
+<script src='JS/my.magicline.1.0.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+
+
+$(document).ready(function(){
+		$('.mainnav').my_magicline(); // menu
+	});
+
+
+</script>
+</body>
+</html>
